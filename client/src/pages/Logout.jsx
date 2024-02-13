@@ -1,5 +1,5 @@
 import React, { useEffect,useState } from 'react'
-// import "../styles/Logout.css";
+import "../styles/Logout.css";
 import { useNavigate } from 'react-router-dom';
 
 const Logout = () => {

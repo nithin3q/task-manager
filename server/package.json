@@ -2,11 +2,11 @@
   "name": "simple-login-and-register-with-json-web-token",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon app.js",
-    "start": "node app.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "author": "Kuzma02",
   "license": "ISC",

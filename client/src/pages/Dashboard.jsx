@@ -16,7 +16,7 @@ const Dashboard = () => {
 
   const fetchTasks = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/tasks", {
+      const response = await axios.get("https://task-manager-mu-lime.vercel.app/tasks", {
         headers: { Authorization: `Bearer ${token}` }
       });
       setTasks(response.data);

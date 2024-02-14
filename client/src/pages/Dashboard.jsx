@@ -29,13 +29,13 @@ const Dashboard = () => {
     e.preventDefault();
     try {
       if (selectedTask) {
-        await axios.put(`http://localhost:3000/tasks/${selectedTask._id}`, newTask, {
+        await axios.put(`https://task-manager-mu-lime.vercel.app/tasks/${selectedTask._id}`, newTask, {
           headers: { Authorization: `Bearer ${token}` }
         });
         toast.success("Task updated successfully");
         setSelectedTask(null);
       } else {
-        await axios.post("http://localhost:3000/tasks", newTask, {
+        await axios.post("https://task-manager-mu-lime.vercel.app/tasks", newTask, {
           headers: { Authorization: `Bearer ${token}` }
         });
         toast.success("Task created successfully");
@@ -56,7 +56,7 @@ const Dashboard = () => {
 
   const handleDeleteTask = async (taskId) => {
     try {
-      await axios.delete(`http://localhost:3000/tasks/${taskId}`, {
+      await axios.delete(`https://task-manager-mu-lime.vercel.app/tasks/${taskId}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       toast.success("Task deleted successfully");
